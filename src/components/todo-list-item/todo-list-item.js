@@ -3,7 +3,7 @@ import './todo-list-item.css';
 
 const TodoListItem = ({ label, important = false }) => {
 
-    const style = { 
+    const style = {
         color: important ? 'steelblue' : 'black',
         fontWeight: important ? 'bold' : 'normal'
     }
@@ -15,8 +15,10 @@ const TodoListItem = ({ label, important = false }) => {
                 {label}
             </span>
 
-            <button type="button" className="btn btn-outline-success btn-sm"><i className="fa fa-exclamation"></i></button>  
-            <button type="button" className="btn btn-outline-danger btn-sm"><i className="fa fa-trash-o"></i></button>  
+            <div className="todo__btn--wrapper">
+                <button type="button" className="btn btn-outline-success btn-sm"><i className="fa fa-exclamation"></i></button>
+                <button type="button" className="btn btn-outline-danger btn-sm"><i className="fa fa-trash-o"></i></button>
+            </div>
         </span>
     )
 }

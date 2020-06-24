@@ -22,3 +22,8 @@
     font-weight: bold;
     color: steelblue;
 }
+
+.todo-list-item {
+    display: flex;
+    justify-content: space-between;
+}
